@@ -1,0 +1,140 @@
+.home {
+  background-color: whitesmoke;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__container {
+  height: 80%;
+  position: relative;
+}
+
+.home__containerCompendium {
+  position: absolute;
+  top: 250px;
+  left: 100px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.home__containerAbout{
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    visibility: hidden;
+  }
+
+.home__img {
+  height: 90%;
+}
+
+.home__img:hover {
+  opacity: 0.8;
+  transition:all 400ms ease-out;
+
+}
+
+.home__containerCompendium {
+    display: flex;
+  margin-right: 10px;
+  border: none !important;
+  color: blue !important;
+  font-weight: 900 !important;
+  border-radius: 30px !important;
+  height: 50px !important;
+  visibility: hidden;
+}
+
+
+.home__containerAbout {
+    display: flex;
+  margin-right: 10px;
+  border: none !important;
+  color: blue !important;
+  font-weight: 900 !important;
+  border-radius: 30px !important;
+  height: 50px !important;
+  visibility: hidden;
+  
+}
+
+.links {
+    text-decoration: none;
+}
+
+/*
+
+ANIMATIONS
+
+*/
+
+.containerBtns__Compendium--active {
+  animation: flyCompendium 1000ms alternate-reverse;
+  animation-fill-mode: forwards;
+  visibility: visible;
+}
+
+.containerBtns__About--active {
+    animation: flyAbout 1000ms alternate-reverse;
+    animation-fill-mode: forwards;
+    visibility: visible;
+ }
+
+@keyframes flyCompendium {
+  0% {
+    transform: translateX(-500px);
+  }
+
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+@keyframes flyAbout {
+  0% {
+    transform: translateX(600px);
+  }
+
+
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+
+/*
+
+RESPONSIVNESS FOR SMALL PHONES, LARGE SMARTPHONES 
+
+*/
+@media (max-width: 550px) {
+
+    
+    @keyframes flyCompendium {
+        0% {
+          transform: translateY(-300px);
+        }
+      
+        100% {
+          transform: translateY(50px);
+        }
+      }
+      
+      @keyframes flyAbout {
+        0% {
+          transform: translateY(400px);
+          
+        }
+
+       
+        100% {
+          transform: translateY(50px);
+        }
+      }
+
+  }

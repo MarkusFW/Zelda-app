@@ -1,0 +1,38 @@
+
+.monster__center {
+    margin-top: 96px;
+}
+
+.monster__description {
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: MintCream;
+    letter-spacing: 0.5px;
+    max-width: 700px;
+}
+
+.monsters__drops {
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  color: MintCream;
+  letter-spacing: 0.5px;
+}
+
+
+  /*
+
+RESPONSIVNESS FOR SMALL PHONES, LARGE SMARTPHONES 
+
+*/
+
+@media (max-width: 550px) {
+    .monster__description {
+        padding: 20px;
+    }
+
+    .monsters__drops {
+        padding: 0px 20px;
+    }
+}

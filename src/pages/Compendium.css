@@ -1,0 +1,123 @@
+/* 
+
+SEARCH
+
+*/
+
+.search__input {
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgrey;
+  height: 30px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  width: 75vw;
+  margin: 0 auto;
+}
+
+.search__input > input {
+  flex: 1;
+  padding: 10px 20px;
+  font-size: medium;
+  border: none;
+  background-color: whitesmoke;
+}
+
+.search__input > input:focus {
+  outline-width: 0;
+}
+
+.search__input--icon {
+  color: gray;
+}
+
+.compendium__backButton {
+  border: none !important;
+  background-color: black !important ;
+  color: PaleGoldenRod !important;
+  font-weight: 400 !important;
+  text-transform: inherit !important;
+  border-radius: 10px !important;
+  width: 80px;
+  height: 40px !important;
+  margin-top: 12px !important;
+  margin-left: 16px !important;
+  text-transform: uppercase !important;
+  transition: 500ms ease !important;
+
+
+}
+
+.compendium__backButton:hover {
+  letter-spacing: 2px;
+    transform: translateY(4px);
+}
+
+/* 
+
+COMPENDIUM
+
+*/
+
+
+.compendium {
+  background-color: whitesmoke;
+}
+
+.compendium__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 2000px;
+  background-color: black;
+  margin-top: 24px;
+}
+
+.monsters {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.monsters:hover .monsters__title {
+  font-variation-settings: "wght" 582;
+  letter-spacing: 1px;
+  margin: 0 2px;
+  cursor: pointer;
+}
+
+.monsters__imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.monsters__title {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-family: "Gambetta", serif;
+  letter-spacing: -1px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: PaleGoldenRod;
+  outline: none;
+  text-align: center;
+}
+
+/*
+
+RESPONSIVNESS FOR SMALL PHONES, LARGE SMARTPHONES 
+
+*/
+@media (max-width: 550px) {
+
+.compendium__backButton {
+    margin-bottom: 16px !important;
+    margin-left: 24px !important;
+}
+
+}
